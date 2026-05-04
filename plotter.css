@@ -1,13 +1,13 @@
-/* ──────────────────── DARK TECH PALETTE ──────────────────── */
+/* ──────────────────── LIGHT PALETTE ──────────────────── */
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --surface2: #21262d;
-  --accent: #00e5a0;
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --surface2: #e8ebf6;
+  --accent: #0bae7d;
   --accent2: #00b8ff;
-  --text: #e8ecf4;
-  --muted: #7a8499;
-  --border: rgba(255, 255, 255, 0.07);
+  --text: #1a1c1e;
+  --muted: #52555c;
+  --border: rgba(0, 0, 0, 0.09);
   --radius: 10px;
 }
 
@@ -32,7 +32,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 17, 23, 0.88);
+  background: rgba(247, 248, 251, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -74,21 +74,25 @@ header {
 .hero {
   text-align: center;
   padding: 72px 20px 60px;
-  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  background: linear-gradient(135deg, #c8cacc 0%, #ebecee 100%);
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  background: radial-gradient(ellipse, rgba(0, 229, 160, 0.08) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 229, 160, 0.08) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -208,13 +212,18 @@ header {
   gap: 12px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
 }
 
 .project::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   opacity: 0;
@@ -223,7 +232,7 @@ header {
 
 .project:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 229, 160, 0.2);
 }
 
@@ -272,7 +281,7 @@ header {
 
 /* ──────────────────── NOTE ──────────────────── */
 .note {
-  background: rgba(0, 229, 160, 0.06);
+  background: rgba(11, 174, 125, 0.07);
   border-left: 3px solid var(--accent);
   border-radius: 0 6px 6px 0;
   padding: 8px 12px;

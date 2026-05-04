@@ -39,18 +39,26 @@
           alt="Sơ đồ kết nối dây mạch"
         />
         <p>
-         Dự án này tập trung vào việc thiết kế và chế tạo một máy in 3D, một thiết bị có khả năng tạo ra các vật thể ba chiều từ mô hình kỹ thuật số.
+          Dự án này tập trung vào việc thiết kế và chế tạo một máy in 3D, một
+          thiết bị có khả năng tạo ra các vật thể ba chiều từ mô hình kỹ thuật
+          số.
         </p>
         <p>
-          Mục tiêu chính của dự án là hiểu nguyên lý hoạt động của công nghệ in 3D và áp dụng kiến thức về cơ khí, điện tử và lập trình.
+          Mục tiêu chính của dự án là hiểu nguyên lý hoạt động của công nghệ in
+          3D và áp dụng kiến thức về cơ khí, điện tử và lập trình.
         </p>
         <p>
-          Máy in 3D trong dự án này sử dụng phương pháp FDM (mô hình hóa lắng đọng nóng chảy), trong đó nhựa được nung chảy và đắp từng lớp để tạo thành sản phẩm.
+          Máy in 3D trong dự án này sử dụng phương pháp FDM (mô hình hóa lắng
+          đọng nóng chảy), trong đó nhựa được nung chảy và đắp từng lớp để tạo
+          thành sản phẩm.
         </p>
         <p>
-          Dự án cũng sử dụng các phần mềm như CAD để thiết kế mô hình và phần mềm cắt lớp (slicer) để chuyển đổi mô hình thành lệnh in.  </p>
+          Dự án cũng sử dụng các phần mềm như CAD để thiết kế mô hình và phần
+          mềm cắt lớp (slicer) để chuyển đổi mô hình thành lệnh in.
+        </p>
         <p>
-          Máy in 3D có nhiều ứng dụng trong chế tạo mẫu, giáo dục, sản xuất và thiết kế sáng tạo.
+          Máy in 3D có nhiều ứng dụng trong chế tạo mẫu, giáo dục, sản xuất và
+          thiết kế sáng tạo.
         </p>
       </div>
     </section>
@@ -78,12 +86,17 @@
         </p>
         <ul>
           <li>
-            <strong>Phần cơ khí:</strong> Khung máy, trục vitme T8, ray trượt, dây đai, pulley
+            <strong>Phần cơ khí:</strong> Khung máy, trục vitme T8, ray trượt,
+            dây đai, pulley
           </li>
           <li>
-            <strong>Phần điện tử:</strong> Arduino, driver, động cơ bước, bộ phận gia nhiệt đầu in
+            <strong>Phần điện tử:</strong> Arduino, driver, động cơ bước, bộ
+            phận gia nhiệt đầu in
           </li>
-          <li><strong>Phần mềm:</strong>Marlin firmware, phần mềm cắt lớp tạo G-code</li>
+          <li>
+            <strong>Phần mềm:</strong>Marlin firmware, phần mềm cắt lớp tạo
+            G-code
+          </li>
         </ul>
       </div>
     </section>
@@ -104,25 +117,28 @@
           </p>
           <ul>
             <li>
-              <strong>Trục X:</strong> Điều khiển chuyển động ngang đầu in bằng động cơ bước. Khi nhận lệnh G-code, động cơ quay một số bước
-              nhất định để đạt vị trí mong muốn.
+              <strong>Trục X:</strong> Điều khiển chuyển động ngang đầu in bằng
+              động cơ bước. Khi nhận lệnh G-code, động cơ quay một số bước nhất
+              định để đạt vị trí mong muốn.
             </li>
             <li>
-              <strong>Trục Y:</strong> Điều khiển chuyển động dọc bàn in bằng động cơ bước. Khi nhận lệnh G-code, động cơ quay một số bước
-              nhất định để đạt vị trí mong muốn.
+              <strong>Trục Y:</strong> Điều khiển chuyển động dọc bàn in bằng
+              động cơ bước. Khi nhận lệnh G-code, động cơ quay một số bước nhất
+              định để đạt vị trí mong muốn.
             </li>
             <li>
-              <strong>Trục Z:</strong> Di chuyển đầu in lên xuống bằng động cơ bước. Khi nhận lệnh G-code, động cơ quay một số bước
-              nhất định để đạt vị trí mong muốn.
+              <strong>Trục Z:</strong> Di chuyển đầu in lên xuống bằng động cơ
+              bước. Khi nhận lệnh G-code, động cơ quay một số bước nhất định để
+              đạt vị trí mong muốn.
             </li>
             <li>
-              <strong>Bộ điều khiển:</strong> Arduino mega nhận dữ liệu G-code và
-              chuyển đổi thành xung điều khiển driver.
+              <strong>Bộ điều khiển:</strong> Arduino mega nhận dữ liệu G-code
+              và chuyển đổi thành xung điều khiển driver.
             </li>
           </ul>
           <p class="note">
-            📌 Ví dụ: Lệnh <strong>G1 X50 Y50 Z50</strong> → đầu vẽ di chuyển đến vị
-            trí (50, 50, 50).
+            📌 Ví dụ: Lệnh <strong>G1 X50 Y50 Z50</strong> → đầu vẽ di chuyển
+            đến vị trí (50, 50, 50).
           </p>
         </div>
 
@@ -253,27 +269,18 @@
           <li>✅ Độ sai số nhỏ (~0.4mm)</li>
         </ul>
       </div>
-        <div class="project-list small">
+      <div class="project-list small">
         <div class="project">
-          <h3>Vẽ mạch PCB</h3>
-          <img
-            src="Photo/3dvd.jpg"
-            class="project-img"
-          />
-           </div>
-            <div class="project">
-          <h3>Vẽ tranh</h3>
-          <img
-            src="Photo/3dvd1.jpg"
-            class="project-img"
-          />
+          <h3>Thành phẩm</h3>
+          <img src="Photo/3dvd.jpg" class="project-img" />
         </div>
-         <div class="project">
-          <h3>Vẽ tranh</h3>
-          <img
-            src="Photo/3dvd2.jpg"
-            class="project-img"
-          />
+        <div class="project">
+          <h3>Thành phẩm</h3>
+          <img src="Photo/3dvd1.jpg" class="project-img" />
+        </div>
+        <div class="project">
+          <h3>Thành phẩm</h3>
+          <img src="Photo/3dvd2.jpg" class="project-img" />
         </div>
       </div>
     </section>
@@ -313,7 +320,8 @@
           <li>Tăng độ chính xác cơ khí</li>
           <li>Ứng dụng vào in các chi tiết thực tế</li>
           <li>
-            Cải tiến độ chính sác, dùng làm máy in ra nét hơn in các đồ dùng trưng bày
+            Cải tiến độ chính sác, dùng làm máy in ra nét hơn in các đồ dùng
+            trưng bày
           </li>
         </ul>
       </div>

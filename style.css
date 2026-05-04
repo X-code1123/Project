@@ -1,12 +1,12 @@
 :root {
-  --bg: #0d0f14;
-  --surface: #161a22;
-  --surface2: #1e2330;
-  --accent: #00e5a0;
-  --accent2: #00b8ff;
-  --text: #e8ecf4;
-  --muted: #7a8499;
-  --border: rgba(255, 255, 255, 0.07);
+  --bg:        #f7f8fb;
+  --surface:   #ffffff;
+  --surface2:  #e8ebf6;
+  --accent:    #0bae7d;
+  --accent2:   #00b8ff;
+  --text:      #1a1c1e;
+  --muted:     #52555c;
+  --border:    rgba(0, 0, 0, 0.09);
   --radius: 12px;
 }
 
@@ -36,7 +36,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 15, 20, 0.85);
+  background: rgba(247, 248, 251, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
@@ -115,7 +115,7 @@ header {
   line-height: 1.2;
   max-width: 700px;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #e8ecf4 30%, #7a8499);
+  background: linear-gradient(135deg, #1a1c1e 30%, #52555c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,7 +138,7 @@ header {
   border-radius: 8px;
   transition: all 0.2s;
   background: var(--accent);
-  color: #0d0f14;
+  color: #ffffff;
   letter-spacing: 0.2px;
 }
 
@@ -151,12 +151,12 @@ header {
 .btn-outline {
   background: transparent;
   color: var(--text);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline:hover {
   background: var(--surface2);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
   box-shadow: none;
 }
 
@@ -184,7 +184,7 @@ header {
 .section-line {
   flex: 1;
   height: 1px;
-  background: var(--border);
+  background: rgba(0, 0, 0, 0.09);
 }
 
 /* ──────────────────── PROJECT GRID ──────────────────── */
@@ -226,7 +226,7 @@ header {
 .project:hover {
   border-color: rgba(0, 229, 160, 0.2);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
 }
 
 .project:hover::before {
